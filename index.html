@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+
+
+<script>
+    function modify(){
+        document.getElementById("result").textContent = "Hello, you clicked button"
+    }
+</script>
 </head>
 <body>
     <form>
@@ -17,7 +24,8 @@
             <label> Age: </label>
         <input type="number" name="Age"
         </div>
-        <input type = "submit" value = "submit">
+        <input type = "submit" value = "submit" onclick="modify()">
     </form>
+    <div id="result"></div>
 </body>
 </html>
